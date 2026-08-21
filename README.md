@@ -1,8 +1,9 @@
 # Frappe Helpdesk JP
 
-Frappe Helpdeskの**非公式日本語対応・導入検証用フォーク**です。上流の機能を変更せず、`helpdesk/locale/ja.po`に日本語UI翻訳を追加しています。
+Frappe Helpdeskの**非公式完全日本語対応・導入検証用フォーク**です。`helpdesk/locale/ja.po`による日本語UIに加え、日本語入力・保存と日本語全文検索に対応しています。
 
 - 日本語翻訳: 1,499 / 1,499メッセージ
+- 日本語検索: チケット、コメント、メール、ナレッジベースの部分検索に対応
 - 対象ブランチ: 上流`develop`
 - ライセンス: 上流と同じ[GNU AGPL v3](LICENSE)
 - 日本語導入手順: [docs/INSTALL_JA.md](docs/INSTALL_JA.md)
@@ -25,7 +26,7 @@ bench build --app helpdesk
 
 ## Translation policy
 
-This is an unofficial Japanese-localization fork of Frappe Helpdesk. It keeps the upstream application code intact and adds a complete Japanese PO catalog. Terminology follows common Japanese helpdesk usage, including `Agent = 担当者`, `Ticket = チケット`, `Saved Reply = 定型返信`, and `Knowledge Base = ナレッジベース`.
+This is an unofficial full Japanese-localization fork of Frappe Helpdesk. It adds a complete Japanese PO catalog and Japanese-aware full-text search for tickets, comments, emails, and knowledge-base articles. Terminology follows common Japanese helpdesk usage, including `Agent = 担当者`, `Ticket = チケット`, `Saved Reply = 定型返信`, and `Knowledge Base = ナレッジベース`.
 
 The original upstream README follows.
 
