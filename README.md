@@ -1,3 +1,36 @@
+# Frappe Helpdesk JP
+
+Frappe Helpdeskの**非公式日本語対応・導入検証用フォーク**です。上流の機能を変更せず、`helpdesk/locale/ja.po`に日本語UI翻訳を追加しています。
+
+- 日本語翻訳: 1,499 / 1,499メッセージ
+- 対象ブランチ: 上流`develop`
+- ライセンス: 上流と同じ[GNU AGPL v3](LICENSE)
+- 日本語導入手順: [docs/INSTALL_JA.md](docs/INSTALL_JA.md)
+- 翻訳検証: `python3 scripts/validate_japanese_locale.py`
+
+> [!IMPORTANT]
+> 本リポジトリはFrappe Technologies公式の日本語版ではありません。製品本体の不具合は[上流リポジトリ](https://github.com/frappe/helpdesk)へ、日本語訳の不具合は[このリポジトリ](https://github.com/katsushi2441/frappe-helpdesk-jp/issues)へ報告してください。公式翻訳への反映はFrappeの[翻訳プロジェクト](https://crowdin.com/project/frappe)を通じて提案します。
+
+## 日本語版の導入
+
+新規のBench環境では、Helpdesk取得時にこのフォークの`jp`ブランチを指定します。
+
+```bash
+bench get-app --branch jp https://github.com/katsushi2441/frappe-helpdesk-jp.git
+bench --site helpdesk.test install-app helpdesk
+bench build --app helpdesk
+```
+
+詳しい前提条件、既存環境への導入、日本語表示への切り替え、更新方法は[日本語導入手順](docs/INSTALL_JA.md)を参照してください。
+
+## Translation policy
+
+This is an unofficial Japanese-localization fork of Frappe Helpdesk. It keeps the upstream application code intact and adds a complete Japanese PO catalog. Terminology follows common Japanese helpdesk usage, including `Agent = 担当者`, `Ticket = チケット`, `Saved Reply = 定型返信`, and `Knowledge Base = ナレッジベース`.
+
+The original upstream README follows.
+
+---
+
 <div align="center" markdown="1">
 
 <img src=".github/hd-logo.svg" alt="Frappe Helpdesk logo" width="80"/>
