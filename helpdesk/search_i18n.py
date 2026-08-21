@@ -1,5 +1,5 @@
-# Copyright (c) 2026, Katsushi Kojima and Contributors
-# GNU Affero General Public License v3. See license.txt
+# Copyright (c) 2026, Frappe Technologies Pvt. Ltd. and Contributors
+# MIT License. See license.txt
 
 import re
 import unicodedata
