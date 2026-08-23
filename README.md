@@ -10,7 +10,12 @@ Frappe Helpdeskの**非公式完全日本語対応・導入検証用フォーク
 - 翻訳検証: `python3 scripts/validate_japanese_locale.py`
 
 > [!IMPORTANT]
-> 本リポジトリはFrappe Technologies公式の日本語版ではありません。製品本体の不具合は[上流リポジトリ](https://github.com/frappe/helpdesk)へ、日本語訳の不具合は[このリポジトリ](https://github.com/katsushi2441/frappe-helpdesk-jp/issues)へ報告してください。公式翻訳への反映はFrappeの[翻訳プロジェクト](https://crowdin.com/project/frappe)を通じて提案します。
+> **本家への還元**: この内容は上流へプルリクエストとして提出済みです。マージされ次第、本家だけで日本語と日本語検索が使えるようになります。それまでの間、このリポジトリの `jp` ブランチをお使いください。
+>
+> - [PR #3713](https://github.com/frappe/helpdesk/pull/3713) — 日本語ロケール（ja.po・全1,499メッセージ）
+> - [PR #3712](https://github.com/frappe/helpdesk/pull/3712) — 日本語（CJK）検索対応
+>
+> 本リポジトリはFrappe Technologies公式の日本語版ではありません。製品本体の不具合は[上流リポジトリ](https://github.com/frappe/helpdesk)へ、日本語訳の不具合は[このリポジトリ](https://github.com/katsushi2441/frappe-helpdesk-jp/issues)へ報告してください。
 
 ## 日本語版の導入
 
@@ -23,6 +28,11 @@ bench build --app helpdesk
 ```
 
 詳しい前提条件、既存環境への導入、日本語表示への切り替え、更新方法は[日本語導入手順](docs/INSTALL_JA.md)を参照してください。
+
+導入の背景、日本語化で詰まった箇所、Zendesk・Freshdeskとの比較は、解説記事にまとめています。
+
+- [Frappe Helpdeskを完全日本語化した話（VWork Blog）](https://katsushi2441.github.io/vwork/blog/2026-08-21-frappe-helpdesk-japanese.html)
+- 導入・カスタマイズのご相談: [OSSのバイブコーディング・カスタマイズ](https://kurage.exbridge.jp/vibe-oss.html?ref=helpdesk-jp)（株式会社エクスブリッジ）
 
 ## Translation policy
 
