@@ -23,8 +23,8 @@ PREFILTER_LIMIT = 500
 
 
 class HelpdeskSearch(SQLiteSearch):
-    # A distinct filename forces existing sites to build the Japanese-capable schema.
-    INDEX_NAME = "helpdesk_search_ja_v1.db"
+    # Bumped so existing sites rebuild the index with the CJK terms column.
+    INDEX_NAME = "helpdesk_search_v2.db"
 
     # Resting value: core search() can bail before get_search_filters() runs.
     is_post_filter_required = False
